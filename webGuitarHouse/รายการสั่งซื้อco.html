@@ -1,0 +1,153 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        div.dropdown-multicol2 {
+            width: 35em;
+        }
+
+        div.dropdown-multicol2>div.dropdown-col {
+            display: inline-block;
+            width: 19%;
+        }
+
+        #conten {
+            margin-top: 6%;
+        }
+        #menu2{
+            margin-top: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-sm">
+        <!-- menu -->
+        <div class="row text-center" id="top">
+            <div class="col-8">
+                <div class="btn-group">
+                    <a class="btn btn-outline-light text-dark " href="#">หน้าหลัก<i class="fa fa-home"></i></a>
+                    <a class="btn btn-outline-light text-dark " href="#">about me</a>
+                    <div class="dropdown">
+                        <a class="btn btn-outline-light text-dark  dropdown-toggle" data-toggle="dropdown">สินค้า</a>
+                        <div class="dropdown-menu dropdown-multicol2">
+                            <div class="dropdown-col">
+                                <a class="dropdown-header">Guitar</a>
+                                <a class="dropdown-item" href="#">Martin</a>
+                                <a class="dropdown-item" href="#">Taylor</a>
+                                <a class="dropdown-item" href="#">Yamaha</a>
+                            </div>
+                            <div class="dropdown-col">
+                                <a class="dropdown-header">Accessory</a>
+                                <a class="dropdown-item" href="#">Elixir</a>
+                                <a class="dropdown-item" href="#">Ernie Ball</a>
+                                <a class="dropdown-item" href="#">Monster</a>
+                            </div>
+                            <div class="dropdown-col">
+                                <a class="dropdown-item" href="#">VOX</a>
+                                <a class="dropdown-item" href="#">RockStand</a>
+                                <a class="dropdown-item" href="#">D'Addario</a>
+                            </div>
+                            <div class="dropdown-col">
+                                <a class="dropdown-item" href="#">Dunlop</a>
+                                <a class="dropdown-item" href="#">DAVA</a>
+                                <a class="dropdown-item" href="#">Fender</a>
+                            </div>
+                            <div class="dropdown-col">
+                                <a class="dropdown-item" href="#">Gibson</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="btn-group">
+                    <a class="btn btn-outline-light text-dark" href="login.html">เข้าสู่ระบบ</a>
+                    <button type="button" class="btn btn-outline-light text-dark ">รายการสั่งซื้อ</button>
+                </div>
+            </div>
+        </div>
+        <!-- conten -->
+
+        <div id="menu2">
+            <div>
+                <h1>รายการสั่งซื้อ</h1>
+                <div>
+                    <h4>ข้อมูลลูกค้า</h4>
+                    นาย ก <br>
+                    ที่อยู่<br>
+                    ๆมกยๆมกยฟกฟิกีักรืฟนก
+                </div>
+                <div class="shadow-sm p-4 mb-4 bg-white">
+                    <div class="row">
+                        <div class="col">
+                            ID
+                        </div>
+                        <div class="col">
+                            brand
+                        </div>
+                        <div class="col">
+                            model
+                        </div>
+                        <div class="col">
+                            ราคา*จำนวน
+                        </div>
+                        <div class="col">
+                            รูป
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-sm p-4 mb-4 bg-white">
+                    <div class="row">
+                        <div class="col">
+                            123
+                        </div>
+                        <div class="col">
+                            bosd
+                        </div>
+                        <div class="col">
+                            losd
+                        </div>
+                        <div class="col">
+                            120
+                        </div>
+                        <div class="col">
+                            <img src="adad" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-sm p-4 mb-4 bg-white">
+                    <div class="row">
+                        <div class="col">
+                            123
+                        </div>
+                        <div class="col">
+                            booo
+                        </div>
+                        <div class="col">
+                            losd
+                        </div>
+                        <div class="col">
+                            120
+                        </div>
+                        <div class="col">
+                            <img src="adad" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

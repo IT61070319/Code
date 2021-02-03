@@ -1,0 +1,570 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Document</title>
+  <style>
+    .dropdown-submenu {
+      position: relative;
+    }
+
+    .dropdown-submenu>a:after {
+      content: ">";
+      float: right;
+    }
+
+    .dropdown-submenu>.dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+
+    .dropdown-submenu:hover>.dropdown-menu {
+      display: block;
+    }
+
+    #left {
+      margin-top: 4%;
+    }
+
+    #footer {
+      margin-top: 10%;
+    }
+
+    #right {
+      margin-top: 4%;
+      margin-left: 3%;
+
+    }
+
+    #demo {
+      margin-left: 4%;
+    }
+
+    #demo1 {
+      margin-left: 4%;
+    }
+
+
+    div.dropdown-multicol2 {
+      width: 35em;
+    }
+
+    div.dropdown-multicol2>div.dropdown-col {
+      display: inline-block;
+      width: 19%;
+    }
+
+    #aboutme {
+      margin-top: 10%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-sm">
+    <div class="row text-center" id="top">
+      <!-- Links -->
+      <div class="col-7">
+        <div class="btn-group">
+          <a class="btn btn-outline-light text-dark " href="#home">หน้าหลัก<i class="fa fa-home"></i></a>
+          <a class="btn btn-outline-light text-dark " href="#aboutme">about me</a>
+          <div class="dropdown">
+            <a class="btn btn-outline-light text-dark  dropdown-toggle" data-toggle="dropdown">สินค้า</a>
+            <div class="dropdown-menu dropdown-multicol2">
+              <div class="dropdown-col">
+                <a class="dropdown-header text-secondary ">Guitar</a>
+                <li class="dropdown-divider"></li>
+                <a class="dropdown-item" href="#">Acoustic</a>
+                <a class="dropdown-item" href="#">Electric</a>
+              </div>
+              <div class="dropdown-col">
+                <a class="dropdown-header text-secondary">Accessory</a>
+                <li class="dropdown-divider"></li>
+                <a class="dropdown-item" href="#">String</a>
+                <a class="dropdown-item" href="#">Cables</a>
+              </div>
+              <div class="dropdown-col">
+                <a class="dropdown-item" href="#">Accessory</a>
+                <a class="dropdown-item" href="#">Pick</a>
+              </div>
+              <div class="dropdown-col">
+                <a class="dropdown-item" href="#">Tools</a>
+                <a class="dropdown-item" href="#">Straps</a>
+              </div>
+              <div class="dropdown-col">
+                <a class="dropdown-item" href="#">CaseBag</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="btn-group">
+          <a class="btn btn-outline-light text-dark" href="login.html">เข้าสู่ระบบ</a>
+          <a class="btn btn-outline-light text-dark" href="#">รายการสั่งซื้อ</a>
+          <a class="btn btn-outline-light text-dark " href="#"><i class="fa fa-shopping-basket"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3" id="left">
+        <div class="text-center">
+          <b>------------product------------</b>
+        </div>
+        <div class="dropdown">
+          <a class="btn btn-outline-light text-dark  dropdown-toggle" data-toggle="dropdown">brand</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-header text-secondary text-left">Guitar</a></li>
+            <li class="dropdown-divider"></li>
+            <!-- 1 -->
+            <li class="dropdown-submenu">
+              <a href="#" class="dropdown-item" tabindex="-1">Martin</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Acoustic</a></li>
+                <li><a class="dropdown-item" href="#">Electric</a></li>
+              </ul>
+            </li>
+            <!-- 2 -->
+            <li class="dropdown-submenu">
+              <a href="#" class="dropdown-item" tabindex="-1">Taylor</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Acoustic</a></li>
+                <li><a class="dropdown-item" href="#">Electric</a></li>
+              </ul>
+            </li>
+            <!-- 3 -->
+            <li class="dropdown-submenu">
+              <a href="#" class="dropdown-item" tabindex="-1">Yamaha</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Acoustic</a></li>
+              </ul>
+            </li>
+            <li><a class="dropdown-header text-secondary">Accessory</a></li>
+            <li class="dropdown-divider"></li>
+            <!-- 4 -->
+            <li class="dropdown-submenu">
+              <a href="#" class="dropdown-item" tabindex="-1">Elixir</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">String</a></li>
+                <li><a class="dropdown-item" href="#">Cables</a></li>
+                <li><a class="dropdown-item" href="#">Accessory</a></li>
+                <li><a class="dropdown-item" href="#">Pick</a></li>
+                <li><a class="dropdown-item" href="#">Tools</a></li>
+                <li><a class="dropdown-item" href="#">Straps</a></li>
+                <li><a class="dropdown-item" href="#">CaseBag</a></li>
+              </ul>
+            </li>
+            <!-- 5 -->
+            <li class="dropdown-submenu">
+              <a href="#" class="dropdown-item" tabindex="-1">Ernie Ball</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">String</a></li>
+                <li><a class="dropdown-item" href="#">Cables</a></li>
+                <li><a class="dropdown-item" href="#">Accessory</a></li>
+                <li><a class="dropdown-item" href="#">Pick</a></li>
+                <li><a class="dropdown-item" href="#">Tools</a></li>
+                <li><a class="dropdown-item" href="#">Straps</a></li>
+                <li><a class="dropdown-item" href="#">CaseBag</a></li>
+              </ul>
+            </li>
+            <!-- 6 -->
+            <li class="dropdown-submenu">
+              <a href="#" class="dropdown-item" tabindex="-1">Monster</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">String</a></li>
+                <li><a class="dropdown-item" href="#">Cables</a></li>
+                <li><a class="dropdown-item" href="#">Accessory</a></li>
+                <li><a class="dropdown-item" href="#">Pick</a></li>
+                <li><a class="dropdown-item" href="#">Tools</a></li>
+                <li><a class="dropdown-item" href="#">Straps</a></li>
+                <li><a class="dropdown-item" href="#">CaseBag</a></li>
+              </ul>
+            </li>
+            <!-- 7 -->
+            <li class="dropdown-submenu">
+              <a href="#" class="dropdown-item" tabindex="-1">VOX</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">String</a></li>
+                <li><a class="dropdown-item" href="#">Cables</a></li>
+                <li><a class="dropdown-item" href="#">Accessory</a></li>
+                <li><a class="dropdown-item" href="#">Pick</a></li>
+                <li><a class="dropdown-item" href="#">Tools</a></li>
+                <li><a class="dropdown-item" href="#">Straps</a></li>
+                <li><a class="dropdown-item" href="#">CaseBag</a></li>
+              </ul>
+            </li>
+            <!-- 8 -->
+            <li class="dropdown-submenu">
+              <a href="#" class="dropdown-item" tabindex="-1">RockStand</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">String</a></li>
+                <li><a class="dropdown-item" href="#">Cables</a></li>
+                <li><a class="dropdown-item" href="#">Accessory</a></li>
+                <li><a class="dropdown-item" href="#">Pick</a></li>
+                <li><a class="dropdown-item" href="#">Tools</a></li>
+                <li><a class="dropdown-item" href="#">Straps</a></li>
+                <li><a class="dropdown-item" href="#">CaseBag</a></li>
+              </ul>
+            </li>
+            <!-- 9 -->
+            <li class="dropdown-submenu">
+              <a href="#" class="dropdown-item" tabindex="-1">D'Addario</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">String</a></li>
+                <li><a class="dropdown-item" href="#">Cables</a></li>
+                <li><a class="dropdown-item" href="#">Accessory</a></li>
+                <li><a class="dropdown-item" href="#">Pick</a></li>
+                <li><a class="dropdown-item" href="#">Tools</a></li>
+                <li><a class="dropdown-item" href="#">Straps</a></li>
+                <li><a class="dropdown-item" href="#">CaseBag</a></li>
+              </ul>
+            </li>
+            <!-- 10 -->
+            <li class="dropdown-submenu">
+              <a href="#" class="dropdown-item" tabindex="-1">Dunlop</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">String</a></li>
+                <li><a class="dropdown-item" href="#">Cables</a></li>
+                <li><a class="dropdown-item" href="#">Accessory</a></li>
+                <li><a class="dropdown-item" href="#">Pick</a></li>
+                <li><a class="dropdown-item" href="#">Tools</a></li>
+                <li><a class="dropdown-item" href="#">Straps</a></li>
+                <li><a class="dropdown-item" href="#">CaseBag</a></li>
+              </ul>
+            </li>
+            <!-- 11 -->
+            <li class="dropdown-submenu">
+              <a href="#" class="dropdown-item" tabindex="-1">DAVA</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">String</a></li>
+                <li><a class="dropdown-item" href="#">Cables</a></li>
+                <li><a class="dropdown-item" href="#">Accessory</a></li>
+                <li><a class="dropdown-item" href="#">Pick</a></li>
+                <li><a class="dropdown-item" href="#">Tools</a></li>
+                <li><a class="dropdown-item" href="#">Straps</a></li>
+                <li><a class="dropdown-item" href="#">CaseBag</a></li>
+              </ul>
+            </li>
+            <!-- 12 -->
+            <li class="dropdown-submenu">
+              <a href="#" class="dropdown-item" tabindex="-1">Fender</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">String</a></li>
+                <li><a class="dropdown-item" href="#">Cables</a></li>
+                <li><a class="dropdown-item" href="#">Accessory</a></li>
+                <li><a class="dropdown-item" href="#">Pick</a></li>
+                <li><a class="dropdown-item" href="#">Tools</a></li>
+                <li><a class="dropdown-item" href="#">Straps</a></li>
+                <li><a class="dropdown-item" href="#">CaseBag</a></li>
+              </ul>
+            </li>
+            <!-- 13 -->
+            <li class="dropdown-submenu">
+              <a href="#" class="dropdown-item" tabindex="-1">Gibson</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">String</a></li>
+                <li><a class="dropdown-item" href="#">Cables</a></li>
+                <li><a class="dropdown-item" href="#">Accessory</a></li>
+                <li><a class="dropdown-item" href="#">Pick</a></li>
+                <li><a class="dropdown-item" href="#">Tools</a></li>
+                <li><a class="dropdown-item" href="#">Straps</a></li>
+                <li><a class="dropdown-item" href="#">CaseBag</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- category -->
+        <div class="dropdown">
+          <a class="btn btn-outline-light text-dark  dropdown-toggle" data-toggle="dropdown">category</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-header text-secondary text-left">Guitar</a></li>
+            <li class="dropdown-divider"></li>
+            <!-- 1 -->
+            <li class="dropdown-submenu">
+              <a href="#" class="dropdown-item" tabindex="-1">Acoustic</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Martin</a></li>
+                <li><a class="dropdown-item" href="#">Taylor</a></li>
+                <li><a class="dropdown-item" href="#">Yamaha</a></li>
+              </ul>
+            </li>
+            <!-- 2 -->
+            <li class="dropdown-submenu">
+              <a href="#" class="dropdown-item" tabindex="-1">Electric</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Martin</a></li>
+                <li><a class="dropdown-item" href="#">Taylor</a></li>
+              </ul>
+            </li>
+            <li><a class="dropdown-header text-secondary">Accessory</a></li>
+            <li class="dropdown-divider"></li>
+            <!-- 3 -->
+            <li class="dropdown-submenu">
+              <a href="#" class="dropdown-item" tabindex="-1">String</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Elixir</a></li>
+                <li><a class="dropdown-item" href="#">Ernie Ball</a></li>
+                <li><a class="dropdown-item" href="#">Monster</a></li>
+                <li><a class="dropdown-item" href="#">VOX</a></li>
+                <li><a class="dropdown-item" href="#">RockStand</a></li>
+                <li><a class="dropdown-item" href="#">D'Addario</a></li>
+                <li><a class="dropdown-item" href="#">Dunlop</a></li>
+                <li><a class="dropdown-item" href="#">DAVA</a></li>
+                <li><a class="dropdown-item" href="#">Fender</a></li>
+                <li><a class="dropdown-item" href="#">Gibson</a></li>
+              </ul>
+            </li>
+            <!-- 4 -->
+            <li class="dropdown-submenu">
+              <a href="#" class="dropdown-item" tabindex="-1">Cables</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Elixir</a></li>
+                <li><a class="dropdown-item" href="#">Ernie Ball</a></li>
+                <li><a class="dropdown-item" href="#">Monster</a></li>
+                <li><a class="dropdown-item" href="#">VOX</a></li>
+                <li><a class="dropdown-item" href="#">RockStand</a></li>
+                <li><a class="dropdown-item" href="#">D'Addario</a></li>
+                <li><a class="dropdown-item" href="#">Dunlop</a></li>
+                <li><a class="dropdown-item" href="#">DAVA</a></li>
+                <li><a class="dropdown-item" href="#">Fender</a></li>
+                <li><a class="dropdown-item" href="#">Gibson</a></li>
+              </ul>
+            </li>
+            <!-- 5 -->
+            <li class="dropdown-submenu">
+              <a href="#" class="dropdown-item" tabindex="-1">Accessory</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Elixir</a></li>
+                <li><a class="dropdown-item" href="#">Ernie Ball</a></li>
+                <li><a class="dropdown-item" href="#">Monster</a></li>
+                <li><a class="dropdown-item" href="#">VOX</a></li>
+                <li><a class="dropdown-item" href="#">RockStand</a></li>
+                <li><a class="dropdown-item" href="#">D'Addario</a></li>
+                <li><a class="dropdown-item" href="#">Dunlop</a></li>
+                <li><a class="dropdown-item" href="#">DAVA</a></li>
+                <li><a class="dropdown-item" href="#">Fender</a></li>
+                <li><a class="dropdown-item" href="#">Gibson</a></li>
+              </ul>
+            </li>
+            <!-- 6 -->
+            <li class="dropdown-submenu">
+              <a href="#" class="dropdown-item" tabindex="-1">Pick</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Elixir</a></li>
+                <li><a class="dropdown-item" href="#">Ernie Ball</a></li>
+                <li><a class="dropdown-item" href="#">Monster</a></li>
+                <li><a class="dropdown-item" href="#">VOX</a></li>
+                <li><a class="dropdown-item" href="#">RockStand</a></li>
+                <li><a class="dropdown-item" href="#">D'Addario</a></li>
+                <li><a class="dropdown-item" href="#">Dunlop</a></li>
+                <li><a class="dropdown-item" href="#">DAVA</a></li>
+                <li><a class="dropdown-item" href="#">Fender</a></li>
+                <li><a class="dropdown-item" href="#">Gibson</a></li>
+              </ul>
+            </li>
+            <!-- 7 -->
+            <li class="dropdown-submenu">
+              <a href="#" class="dropdown-item" tabindex="-1">Tools</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Elixir</a></li>
+                <li><a class="dropdown-item" href="#">Ernie Ball</a></li>
+                <li><a class="dropdown-item" href="#">Monster</a></li>
+                <li><a class="dropdown-item" href="#">VOX</a></li>
+                <li><a class="dropdown-item" href="#">RockStand</a></li>
+                <li><a class="dropdown-item" href="#">D'Addario</a></li>
+                <li><a class="dropdown-item" href="#">Dunlop</a></li>
+                <li><a class="dropdown-item" href="#">DAVA</a></li>
+                <li><a class="dropdown-item" href="#">Fender</a></li>
+                <li><a class="dropdown-item" href="#">Gibson</a></li>
+              </ul>
+            </li>
+            <!-- 8 -->
+            <li class="dropdown-submenu">
+              <a href="#" class="dropdown-item" tabindex="-1">Straps</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Elixir</a></li>
+                <li><a class="dropdown-item" href="#">Ernie Ball</a></li>
+                <li><a class="dropdown-item" href="#">Monster</a></li>
+                <li><a class="dropdown-item" href="#">VOX</a></li>
+                <li><a class="dropdown-item" href="#">RockStand</a></li>
+                <li><a class="dropdown-item" href="#">D'Addario</a></li>
+                <li><a class="dropdown-item" href="#">Dunlop</a></li>
+                <li><a class="dropdown-item" href="#">DAVA</a></li>
+                <li><a class="dropdown-item" href="#">Fender</a></li>
+                <li><a class="dropdown-item" href="#">Gibson</a></li>
+              </ul>
+            </li>
+            <!-- 9 -->
+            <li class="dropdown-submenu">
+              <a href="#" class="dropdown-item" tabindex="-1">CaseBag</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Elixir</a></li>
+                <li><a class="dropdown-item" href="#">Ernie Ball</a></li>
+                <li><a class="dropdown-item" href="#">Monster</a></li>
+                <li><a class="dropdown-item" href="#">VOX</a></li>
+                <li><a class="dropdown-item" href="#">RockStand</a></li>
+                <li><a class="dropdown-item" href="#">D'Addario</a></li>
+                <li><a class="dropdown-item" href="#">Dunlop</a></li>
+                <li><a class="dropdown-item" href="#">DAVA</a></li>
+                <li><a class="dropdown-item" href="#">Fender</a></li>
+                <li><a class="dropdown-item" href="#">Gibson</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+
+      <div class="clo-8" id='right'>
+        <div id="home">
+          <h1>สินค้ามาใหม่</h1>
+          <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner" style="width: 760px; height: 250px;">
+              <div class="carousel-item active">
+                <a href="login.html"><img style="width: 250px; height: 250px;"
+                    src="https://quinl.quinlcdn.com/CompanyImages/slider/1908/mobile_1566382819_971028.jpg"
+                    alt="Los Angeles"></a>
+                <a href="login.html"><img style="width: 250px; height: 250px;"
+                    src="https://quinl.quinlcdn.com/CompanyImages/slider/1908/mobile_1566382819_971028.jpg"
+                    alt="Los Angeles"></a>
+                <a href="login.html"><img style="width: 250px; height: 250px;"
+                    src="https://quinl.quinlcdn.com/CompanyImages/slider/1908/mobile_1566382819_971028.jpg"
+                    alt="Los Angeles"></a>
+                <a href="login.html"><img style="width: 250px; height: 250px;"
+                    src="https://quinl.quinlcdn.com/CompanyImages/slider/1908/mobile_1566382819_971028.jpg"
+                    alt="Los Angeles"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="#"></a><img style="width: 250px; height: 250px;"
+                  src="https://ingreen.co.th/wp-content/uploads/2019/04/FB_ต้นไม้ใหญ่-1-ต้น_395x247-01.png"
+                  alt="Chicago"></a>
+                <a href="#"></a><img style="width: 250px; height: 250px;"
+                  src="https://ingreen.co.th/wp-content/uploads/2019/04/FB_ต้นไม้ใหญ่-1-ต้น_395x247-01.png"
+                  alt="Chicago"></a>
+                <a href="#"></a><img style="width: 250px; height: 250px;"
+                  src="https://ingreen.co.th/wp-content/uploads/2019/04/FB_ต้นไม้ใหญ่-1-ต้น_395x247-01.png"
+                  alt="Chicago"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="#"><img style="width: 250px; height: 250px;"
+                    src="https://en.pimg.jp/048/853/496/1/48853496.jpg" alt="New York"></a>
+                <a href="#"><img style="width: 250px; height: 250px;"
+                    src="https://en.pimg.jp/048/853/496/1/48853496.jpg" alt="New York"></a>
+                <a href="#"><img style="width: 250px; height: 250px;"
+                    src="https://en.pimg.jp/048/853/496/1/48853496.jpg" alt="New York"></a>
+              </div>
+            </div>
+
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+
+          </div>
+          <h1>สินค้าเเนะนำ</h1>
+          <div id="demo1" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo1" data-slide-to="0" class="active"></li>
+              <li data-target="#demo1" data-slide-to="1"></li>
+              <li data-target="#demo1" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner" style="width: 760px; height: 250px;">
+              <div class="carousel-item active">
+                <a href="#"> <img style="width: 250px; height: 250px;"
+                    src="https://www.baanlaesuan.com/app/uploads/2019/07/9-roobchonhtonmaihai-.jpg"
+                    alt="Los Angeles"></a>
+                <a href="#"> <img style="width: 250px; height: 250px;"
+                    src="https://www.baanlaesuan.com/app/uploads/2019/07/9-roobchonhtonmaihai-.jpg"
+                    alt="Los Angeles"></a>
+                <a href="#"> <img style="width: 250px; height: 250px;"
+                    src="https://www.baanlaesuan.com/app/uploads/2019/07/9-roobchonhtonmaihai-.jpg"
+                    alt="Los Angeles"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="#"> <img style="width: 250px; height: 250px;"
+                    src="https://www.thairath.co.th/media/dFQROr7oWzulq5FZXk91hGIiBDZ2UlFr5IrOsAvBrIjEdKHGQNZIxbgW2r4G8B0QzHg.jpg"
+                    alt="Chicago"></a>
+                <a href="#"> <img style="width: 250px; height: 250px;"
+                    src="https://www.thairath.co.th/media/dFQROr7oWzulq5FZXk91hGIiBDZ2UlFr5IrOsAvBrIjEdKHGQNZIxbgW2r4G8B0QzHg.jpg"
+                    alt="Chicago"></a>
+                <a href="#"> <img style="width: 250px; height: 250px;"
+                    src="https://www.thairath.co.th/media/dFQROr7oWzulq5FZXk91hGIiBDZ2UlFr5IrOsAvBrIjEdKHGQNZIxbgW2r4G8B0QzHg.jpg"
+                    alt="Chicago"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="#"><img style="width: 250px; height: 250px;"
+                    src="https://www.jorakay.co.th/ckfinder/userfiles/images/ภาพภายใน%201%20วิธีย้ายต้นไม้ใหญ่%20ตกแต่งบ้านทำอย่างไร%20มีวิธีไหม.jpg"
+                    alt="New York"></a>
+                <a href="#"><img style="width: 250px; height: 250px;"
+                    src="https://www.jorakay.co.th/ckfinder/userfiles/images/ภาพภายใน%201%20วิธีย้ายต้นไม้ใหญ่%20ตกแต่งบ้านทำอย่างไร%20มีวิธีไหม.jpg"
+                    alt="New York"></a>
+                <a href="#"><img style="width: 250px; height: 250px;"
+                    src="https://www.jorakay.co.th/ckfinder/userfiles/images/ภาพภายใน%201%20วิธีย้ายต้นไม้ใหญ่%20ตกแต่งบ้านทำอย่างไร%20มีวิธีไหม.jpg"
+                    alt="New York"></a>
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo1" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- About me-->
+        <div id="aboutme" class="container-fluid bg-success">
+          <h1>About Me</h1>
+          content
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-dark" id="footer">
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        <h5 class="text-light">CONTACT</h5>
+        <ul class="list-inline ">
+          <li class="list-inline-item text-light"><i class="fa fa-phone"></i>&nbsp;089-673-2346</li>
+          <li class="list-inline-item text-light"><i class="fa fa-facebook-official"></i>&nbsp;Nu Ranger</li>
+          <li class="list-inline-item text-light"><i class="fa fa-envelope"></i>&nbsp;Nuranger@hotmail.com</li>
+        </ul>
+      </div>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Document</title>
+  <style>
+    .dropdown-submenu {
+      position: relative;
+    }
+
+    .dropdown-submenu>a:after {
+      content: ">";
+      float: right;
+    }
+
+    .dropdown-submenu>.dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+
+    .dropdown-submenu:hover>.dropdown-menu {
+      display: block;
+    }
+
+    #left {
+      margin-top: 4%;
+    }
+
+    #footer {
+      margin-top: 10%;
+    }
+
+    #right {
+      margin-top: 4%;
+      margin-left: 3%;
+
+    }
+
+    #demo {
+      margin-left: 4%;
+    }
+
+    #demo1 {
+      margin-left: 4%;
+    }
+
+
+    div.dropdown-multicol2 {
+      width: 35em;
+    }
+
+    div.dropdown-multicol2>div.dropdown-col {
+      display: inline-block;
+      width: 19%;
+    }
+
+    #aboutme {
+      margin-top: 10%;
+    }
+    #login {
+      margin-left: 40%;
+      margin-top: 6%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="row text-center" id="top">
+    <!-- Links -->
+    <div class="col-7">
+      <div class="btn-group">
+        <a class="btn btn-outline-light text-dark " href="#home">หน้าหลัก<i class="fa fa-home"></i></a>
+        <a class="btn btn-outline-light text-dark " href="#aboutme">about me</a>
+        <div class="dropdown">
+          <a class="btn btn-outline-light text-dark  dropdown-toggle" data-toggle="dropdown">สินค้า</a>
+          <div class="dropdown-menu dropdown-multicol2">
+            <div class="dropdown-col">
+              <a class="dropdown-header text-secondary ">Guitar</a>
+              <li class="dropdown-divider"></li>
+              <a class="dropdown-item" href="#">Acoustic</a>
+              <a class="dropdown-item" href="#">Electric</a>
+            </div>
+            <div class="dropdown-col">
+              <a class="dropdown-header text-secondary">Accessory</a>
+              <li class="dropdown-divider"></li>
+              <a class="dropdown-item" href="#">String</a>
+              <a class="dropdown-item" href="#">Cables</a>
+            </div>
+            <div class="dropdown-col">
+              <a class="dropdown-item" href="#">Accessory</a>
+              <a class="dropdown-item" href="#">Pick</a>
+            </div>
+            <div class="dropdown-col">
+              <a class="dropdown-item" href="#">Tools</a>
+              <a class="dropdown-item" href="#">Straps</a>
+            </div>
+            <div class="dropdown-col">
+              <a class="dropdown-item" href="#">CaseBag</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="btn-group">
+        <a class="btn btn-outline-light text-dark" href="login.html">เข้าสู่ระบบ</a>
+        <a class="btn btn-outline-light text-dark" href="#">รายการสั่งซื้อ</a>
+        <a class="btn btn-outline-light text-dark " href="#"><i class="fa fa-shopping-basket"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="container-sm" id="login">
+    <div>
+      <h1>Login</h1>
+    </div>
+    <div>
+      <span>username:<input class="form-control w-25" type="text"></span><br>
+      <span>password:<input class="form-control w-25" type="password"></span></div><br>
+    <input class="form-control w-25" type='submit'><br>
+    <p class="small">หากท่านยังไม่มีรหัสกดที่<a href="login2.html">ลงทะเบียน</a></p>
+  </div>
+</body>
+
+</html>

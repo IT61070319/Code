@@ -1,0 +1,181 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        div.dropdown-multicol2 {
+            width: 35em;
+        }
+
+        div.dropdown-multicol2>div.dropdown-col {
+            display: inline-block;
+            width: 19%;
+        }
+
+        #conten {
+            margin-top: 6%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-sm">
+        <!-- menu -->
+        <div class="row text-center" id="top">
+            <div class="col-8">
+                <div class="btn-group">
+                    <a class="btn btn-outline-light text-dark " href="#">หน้าหลัก<i class="fa fa-home"></i></a>
+                    <a class="btn btn-outline-light text-dark " href="#">about me</a>
+                    <div class="dropdown">
+                        <a class="btn btn-outline-light text-dark  dropdown-toggle" data-toggle="dropdown">สินค้า</a>
+                        <div class="dropdown-menu dropdown-multicol2">
+                            <div class="dropdown-col">
+                                <a class="dropdown-header">Guitar</a>
+                                <a class="dropdown-item" href="#">Martin</a>
+                                <a class="dropdown-item" href="#">Taylor</a>
+                                <a class="dropdown-item" href="#">Yamaha</a>
+                            </div>
+                            <div class="dropdown-col">
+                                <a class="dropdown-header">Accessory</a>
+                                <a class="dropdown-item" href="#">Elixir</a>
+                                <a class="dropdown-item" href="#">Ernie Ball</a>
+                                <a class="dropdown-item" href="#">Monster</a>
+                            </div>
+                            <div class="dropdown-col">
+                                <a class="dropdown-item" href="#">VOX</a>
+                                <a class="dropdown-item" href="#">RockStand</a>
+                                <a class="dropdown-item" href="#">D'Addario</a>
+                            </div>
+                            <div class="dropdown-col">
+                                <a class="dropdown-item" href="#">Dunlop</a>
+                                <a class="dropdown-item" href="#">DAVA</a>
+                                <a class="dropdown-item" href="#">Fender</a>
+                            </div>
+                            <div class="dropdown-col">
+                                <a class="dropdown-item" href="#">Gibson</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="btn-group">
+                    <a class="btn btn-outline-light text-dark" href="login.html">เข้าสู่ระบบ</a>
+                    <button type="button" class="btn btn-outline-light text-dark ">รายการสั่งซื้อ</button>
+                </div>
+            </div>
+        </div>
+        <!-- conten -->
+        <ul class="nav nav-tabs" id="conten" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#home">เพิ่มข้อมูล</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu1">เเก้ไขข้อมูล</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div id="home" class="container tab-pane active"><br>
+                <h1>เพื่มข้อมูล</h1>
+                <div>
+                    ItemID:<input type="number" class="form-control w-50">
+                    brand:<select id="brand" class="form-control w-50" name="brand">
+                        <option value="00">เลือก</option>
+                        <option value="01">Martin</option>
+                        <option value="02">Taylor</option>
+                        <option value="03">Yamaha</option>
+                        <option value="04">Elixir</option>
+                        <option value="05">Ernie Ball</option>
+                        <option value="06">Monster</option>
+                        <option value="07">VOX</option>
+                        <option value="08">RockStand</option>
+                        <option value="09">D'Addario</option>
+                        <option value="10">Dunlop</option>
+                        <option value="11">DAVA</option>
+                        <option value="12">Fender</option>
+                        <option value="13">Gibson</option>
+                    </select>
+                    model:<input type="text" class="form-control w-50">
+                    price:<input type="number" class="form-control w-50">
+                    category:
+                    <select id="category" class="form-control w-50" name="category">
+                        <option value="100">เลือก</option>
+                        <option value="111">Acoustic</option>
+                        <option value="122">Electric</option>
+                        <option value="133">String</option>
+                        <option value="14">Cables</option>
+                        <option value="15">Accessory</option>
+                        <option value="16">Pick</option>
+                        <option value="17">Tools</option>
+                        <option value="18">Straps</option>
+                        <option value="19">CaseBag</option>
+                    </select>
+                    describe:<input type="number" class="form-control w-50">
+                    spec:<input type="text" class="form-control w-50">
+                    picture:<input type="text" class="form-control w-50">
+                    inventory:<input type="number" class="form-control w-50"><br>
+                    <input type="submit" class="btn btn-success w-25">
+                </div>
+            </div>
+
+
+
+            <div id="menu1" class="container tab-pane fade"><br>
+                <h1>เเก้ไขข้อมูล</h1>
+                <div>
+                    ItemID:<input type="number" class="form-control w-50">
+                    brand:<select id="brand" class="form-control w-50" name="brand">
+                        <option value="20">เลือก</option>
+                        <option value="21">Martin</option>
+                        <option value="22">Taylor</option>
+                        <option value="23">Yamaha</option>
+                        <option value="24">Elixir</option>
+                        <option value="25">Ernie Ball</option>
+                        <option value="26">Monster</option>
+                        <option value="27">VOX</option>
+                        <option value="28">RockStand</option>
+                        <option value="29">D'Addario</option>
+                        <option value="110">Dunlop</option>
+                        <option value="101">DAVA</option>
+                        <option value="102">Fender</option>
+                        <option value="103">Gibson</option>
+                    </select>
+                    model:<input type="text" class="form-control w-50">
+                    price:<input type="number" class="form-control w-50">
+                    category:
+                    <select id="category" class="form-control w-50" name="category">
+                        <option value="30">เลือก</option>
+                        <option value="31">Acoustic</option>
+                        <option value="32">Electric</option>
+                        <option value="33">String</option>
+                        <option value="34">Cables</option>
+                        <option value="35">Accessory</option>
+                        <option value="36">Pick</option>
+                        <option value="37">Tools</option>
+                        <option value="38">Straps</option>
+                        <option value="39">CaseBag</option>
+                    </select>
+                    describe:<input type="number" class="form-control w-50">
+                    spec:<input type="text" class="form-control w-50">
+                    picture:<input type="text" class="form-control w-50">
+                    inventory:<input type="number" class="form-control w-50"><br>
+                    <input type="submit" value="Update" class="btn btn-success w-25">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

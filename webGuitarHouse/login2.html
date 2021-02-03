@@ -1,0 +1,118 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-sm">
+        <div class="row text-center" id="top">
+            <div class="col-8">
+                <div class="btn-group">
+                    <a class="btn btn-outline-light text-dark " href="#">หน้าหลัก<i class="fa fa-home"></i></a>
+                    <a class="btn btn-outline-light text-dark " href="#">about me</a>
+                    <div class="dropdown">
+                        <a class="btn btn-outline-light text-dark  dropdown-toggle" data-toggle="dropdown">สินค้า</a>
+                        <div class="dropdown-menu dropdown-multicol2">
+                            <div class="dropdown-col">
+                                <a class="dropdown-header">Guitar</a>
+                                <a class="dropdown-item" href="#">Martin</a>
+                                <a class="dropdown-item" href="#">Taylor</a>
+                                <a class="dropdown-item" href="#">Yamaha</a>
+                            </div>
+                            <div class="dropdown-col">
+                                <a class="dropdown-header">Accessory</a>
+                                <a class="dropdown-item" href="#">Elixir</a>
+                                <a class="dropdown-item" href="#">Ernie Ball</a>
+                                <a class="dropdown-item" href="#">Monster</a>
+                            </div>
+                            <div class="dropdown-col">
+                                <a class="dropdown-item" href="#">VOX</a>
+                                <a class="dropdown-item" href="#">RockStand</a>
+                                <a class="dropdown-item" href="#">D'Addario</a>
+                            </div>
+                            <div class="dropdown-col">
+                                <a class="dropdown-item" href="#">Dunlop</a>
+                                <a class="dropdown-item" href="#">DAVA</a>
+                                <a class="dropdown-item" href="#">Fender</a>
+                            </div>
+                            <div class="dropdown-col">
+                                <a class="dropdown-item" href="#">Gibson</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="btn-group">
+                    <a class="btn btn-outline-light text-dark" href="login.html">เข้าสู่ระบบ</a>
+                    <button type="button" class="btn btn-outline-light text-dark "><i
+                            class="fa fa-shopping-basket"></i></button>
+                </div>
+            </div>
+        </div>
+        <h1 class="text-center">สมัคสมาชิก</h1>
+        <div style="margin-left:28%; width: 100%;">
+            <div class="row">
+                <div class="col-3">
+                    <span>username:<input class="form-control " type="text"></span>
+                </div>
+                <div class="col-3">
+                    <span>password:<input class="form-control" type="password"></span>
+                </div>
+            </div>
+            <span>Firstname:<input class="form-control w-50" type="text"></span><br>
+            <span>Lastname:<input class="form-control w-50" type="text"></span><br>
+            <div class="row">
+                <div class="col-3">
+                    <span>E-mail:<input class="form-control" type="email"></span>
+                </div>
+                <div class="col-3">
+                    <span>phonenumber:<input class="form-control" type="text"></span>
+                </div>
+            </div>
+            <span>sex:
+                <select class="form-control w-25" id='sex' name="sex">
+                    <option value="00">เลือกเพศ</option>
+                    <option value="01">ชาย</option>
+                    <option value="02">หญิง</option>
+                </select> </span>
+            <div class="row">
+                <div class="col-3">
+                    <span>Acc/No:<input class="form-control" type="text"></span>
+                </div>
+                <div class="col-3">
+                    <span>bank:<select class="form-control" id='bank' name="brank">
+                            <option value="00">เลือกธนาคาร</option>
+                            <option value="01">BAY</option>
+                            <option value="02">TMB</option>
+                            <option value="03">CITI</option>
+                            <option value="04">SCB</option>
+                            <option value="05">KBANK</option>
+                            <option value="06">GSB</option>
+                            <option value="07">TBANK</option>
+                        </select>
+                    </span>
+                </div>
+            </div>
+            <span>address1:<textarea class="form-control w-50" rows="5" id="comment"></textarea></span><br>
+            <span>Zip code1:<input class="form-control w-50" type="text"></span><br>
+            <span>address2:<textarea class="form-control w-50" rows="5" id="comment"></textarea></span><br>
+            <span>Zip code2:<input class="form-control w-50" type="text"></span>
+        </div><br>
+        <div class="row">
+            <a class="btn btn-secondary form-control " style="margin-left:30%;width: 16%;"
+                href="login.html">ย้อนกลับไปหน้าlogin</a>
+            <input class="btn btn-success form-control " style="margin-left:10%;width: 16%;" type='submit'>
+        </div>
+    </div>
+</body>
+
+</html>
